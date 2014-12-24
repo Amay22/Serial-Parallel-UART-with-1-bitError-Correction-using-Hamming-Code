@@ -1,0 +1,47 @@
+# clocks and reset
+NET "clr"	     		LOC = "C4";
+#NET "clk"	     		LOC = "A8";
+#NET "clk_in" LOC = "A8" | CLOCK_DEDICATED_ROUTE=FALSE;
+NET "clock"	     LOC = "V10";
+
+# User Inputs
+NET "input_valid" 	LOC = "C9";
+NET "errorbit"    	LOC = "D9";
+
+# DIP Switches
+NET "data_in<0>"	  LOC = "T10";
+NET "data_in<1>"	  LOC = "T9";
+NET "data_in<2>"	  LOC = "V9";
+NET "data_in<3>"	  LOC = "M8";
+NET "data_in<4>"	  LOC = "N8";
+NET "data_in<5>"	  LOC = "U8";
+NET "data_in<6>"	  LOC = "V8";
+NET "data_in<7>"	  LOC = "T5";
+
+# Individual LEDs
+NET "transmit_led<7>"   LOC = "T11";
+NET "transmit_led<6>"	  LOC = "R11";
+NET "transmit_led<5>"	  LOC = "N11";
+NET "transmit_led<4>"	  LOC = "M11";
+NET "transmit_led<3>"	  LOC = "V15";
+NET "transmit_led<2>"	  LOC = "U15";
+NET "transmit_led<1>"	  LOC = "V16";
+NET "transmit_led<0>"	  LOC = "U16";
+
+# 7 Segment Display
+NET "currentValue<0>"	  LOC = "T17";
+NET "currentValue<1>"	  LOC = "T18";
+NET "currentValue<2>"	  LOC = "U17";
+NET "currentValue<3>"	  LOC = "U18";
+NET "currentValue<4>"	  LOC = "M14";
+NET "currentValue<5>"	  LOC = "N14";
+NET "currentValue<6>"	  LOC = "L14";
+NET "dot"	  				  LOC = "M13";
+NET "digit3en"	        LOC = "P17"; # AN3
+NET "digit2en"	        LOC = "P18"; # AN2
+NET "digit1en"	        LOC = "N15"; # AN1
+NET "digit0en"	        LOC = "N16"; # AN0
+
+
+
+
